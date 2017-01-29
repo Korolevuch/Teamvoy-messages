@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 1) do
 
   create_table "messages", force: :cascade do |t|
-    t.text     "descriptino"
+    t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

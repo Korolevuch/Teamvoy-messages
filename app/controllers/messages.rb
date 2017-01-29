@@ -12,7 +12,7 @@ Messages::App.controllers :messages do
   end
 
   post :create, :map => '/create'  do
-   @message = Message.new(descriptino: params[:message][:descriptino])
+   @message = Message.new(description: params[:message][:description])
    @message.save
    render 'messages/new'
  end

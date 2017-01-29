@@ -1,3 +1,3 @@
 class Message < ActiveRecord::Base
-validates_presence_of :descriptino
+validates_presence_of :description
 end

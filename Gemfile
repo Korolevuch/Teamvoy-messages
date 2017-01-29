@@ -23,6 +23,7 @@ gem 'activerecord', '>= 3.1', :require => 'active_record'
 gem 'sqlite3'
 gem 'pry'
 gem 'pry-remote'
+gem 'aescrypt'
 
 # Test requirements
 gem 'rspec', :group => 'test'

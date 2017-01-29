@@ -21,6 +21,8 @@ gem 'sass'
 gem 'slim'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 gem 'sqlite3'
+gem 'pry'
+gem 'pry-remote'
 
 # Test requirements
 gem 'rspec', :group => 'test'

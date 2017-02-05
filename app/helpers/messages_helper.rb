@@ -3,9 +3,9 @@
 module Messages
   class App
     module MessagesHelper
-      # def simple_helper_method
-      # ...
-      # end
+      def id_is_numeric?(id)
+        true if Float(id) rescue false
+      end
     end
 
     helpers MessagesHelper

@@ -21,8 +21,8 @@ gem 'sass'
 gem 'slim'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 gem 'sqlite3'
-gem 'pry'
-gem 'pry-remote'
+gem 'byebug'
+gem 'friendly_id'
 gem 'aescrypt'
 
 # Test requirements

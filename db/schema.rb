@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 6) do
+ActiveRecord::Schema.define(version: 7) do
 
   create_table "messages", force: :cascade do |t|
     t.text     "description"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 6) do
     t.datetime "updated_at",              null: false
     t.string   "slug"
     t.integer  "exstraction", default: 0
+    t.integer  "count_visit", default: 0
   end
 
 end

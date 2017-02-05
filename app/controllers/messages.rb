@@ -1,6 +1,12 @@
 Messages::App.controllers :messages do
   layout 'application'
 
+  before :show do
+   @message = Message.friendly.find(params[:id])
+   @message.count_visit += 1
+   @message.save
+  end
+
   get :new, :map => '/new' do
     @message = Message.new
     render 'messages/new'
@@ -23,9 +29,5 @@ Messages::App.controllers :messages do
   else
     render 'messages/new'
    end
-  end
-
-  delete :destroy do
-
   end
 end

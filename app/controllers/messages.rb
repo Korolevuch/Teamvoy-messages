@@ -7,7 +7,7 @@
    @message.save
   end
 
-  get :new, :map => '/new' do
+  get :new, :map => '/' do
     @message = Message.new
     render 'messages/new'
   end

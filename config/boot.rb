@@ -48,6 +48,7 @@ Padrino.dependency_paths.unshift Padrino.root('config/initializers/*.rb')
 # Add your before (RE)load hooks here
 # These hooks are run before any dependencies are required.
 #
+
 Padrino.before_load do
 end
 
@@ -55,6 +56,7 @@ end
 # Add your after (RE)load hooks here
 #
 Padrino.after_load do
+  ActiveRecord::Base.default_timezone = :local
 end
 
 Padrino.load!

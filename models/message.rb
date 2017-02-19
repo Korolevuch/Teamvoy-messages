@@ -4,9 +4,12 @@ class Message < ActiveRecord::Base
   friendly_id :secure_random, use: :slugged
   validates :description, presence: true
 
+  scope :not_actual_messages, -> { where('exstraction = ? AND created_at < ?', HOUR, 1.hour.ago) }
+
   VISIT = 1
   HOUR  = 0
-  enum exstraction: { hour: HOUR, visit: VISIT }
+  TYPE_FOR_DELETING = { hour: HOUR, visit: VISIT }
+  enum exstraction: TYPE_FOR_DELETING
 
   def secure_random
     SecureRandom.hex(16)

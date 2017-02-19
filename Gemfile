@@ -24,6 +24,7 @@ gem 'sqlite3'
 gem 'byebug'
 gem 'friendly_id'
 gem 'aescrypt'
+gem 'whenever', :require => false
 
 # Test requirements
 gem 'rspec', :group => 'test'

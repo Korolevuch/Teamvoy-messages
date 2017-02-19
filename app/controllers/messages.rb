@@ -1,4 +1,4 @@
-Messages::App.controllers :messages do
+ Messages::App.controllers :messages do
   layout 'application'
 
   before :show do

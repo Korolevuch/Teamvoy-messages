@@ -5,8 +5,7 @@ module Messages
     register Padrino::Mailer
     register Padrino::Helpers
     enable :sessions
-
-
-
-  end
+    register Padrino::Sprockets
+    sprockets :minify => (Padrino.env == :production)
+ end
 end

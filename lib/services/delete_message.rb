@@ -1,4 +1,4 @@
-class DeleteMessages
+class DeleteMessage
   attr_reader :message_object
 
   def self.call(params = {})
@@ -10,7 +10,7 @@ class DeleteMessages
   end
 
   def destroy_message
-    message_object.destroy if visit? && visit_count_more_zen_two?
+    message_object.destroy if visit? && visit_count_more_than_two?
   end
 
   private
@@ -19,7 +19,7 @@ class DeleteMessages
     message_object.exstraction == 'visit'
   end
 
-  def visit_count_more_zen_two?
+  def visit_count_more_than_two?
     message_object.count_visit > 2
   end
 end

@@ -1,11 +1,9 @@
-h1 Hello Word
 
-= form_for @message, '/create' do |f|
-    = f.label :message
-    = f.text_field :description
-    br
-     | Delete message an one hour or first visit
-    = f.select  :exstraction, options: Message.exstractions.keys.map {|el| el }
-    br
-    = f.submit 'Create', class: 'button'
-
+  = form_for @message, '/create' do |f|
+      = f.label :message
+      = f.text_field :description
+      br
+       | Delete message an one hour or first visit
+      = f.select  :exstraction, options: Message.exstractions.keys.map {|el| el }
+      br
+      = f.submit 'Create', class: "btn"

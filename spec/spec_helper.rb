@@ -1,7 +1,10 @@
+require 'whenever'
+
 RACK_ENV = 'test' unless defined?(RACK_ENV)
 require File.expand_path(File.dirname(__FILE__) + "/../config/boot")
 Dir[File.expand_path(File.dirname(__FILE__) + "/../app/helpers/**/*.rb")].each(&method(:require))
-
+require 'support/factory_girl'
+require 'support/rspec_matchers'
 RSpec.configure do |conf|
   conf.include Rack::Test::Methods
 end

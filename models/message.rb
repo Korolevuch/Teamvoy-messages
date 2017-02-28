@@ -16,6 +16,6 @@ class Message < ActiveRecord::Base
   end
 
   def delete_msg
-    ::DeleteMessages.(message_object: self)
+    ::DeleteMessage.(message_object: self)
   end
 end

@@ -24,7 +24,7 @@ ActiveRecord::Base.configurations[:development] = {
 
 ActiveRecord::Base.configurations[:production] = {
   adapter: 'postgresql',
-  host: 'localhost',
+  host: 'still-anchorage-70952.herokuapp.com',
   port: 5432,
   username: 'bogdan',
   password: '123456',

@@ -14,22 +14,23 @@
 #   }
 #
 ActiveRecord::Base.configurations[:development] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'messages_development.db')
-
+  adapter: 'postgresql',
+  host: 'localhost',
+  port: '5432',
+  username: 'bogdan',
+  password: '123456',
+  database: 'messages_development'
 }
 
 ActiveRecord::Base.configurations[:production] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'messages_production.db')
-
+  adapter: 'postgresql',
+  host: 'still-anchorage-70952.herokuapp.com',
+  port: 5432,
+  username: 'bogdan',
+  password: '123456',
+  database: 'messages_development'
 }
 
-ActiveRecord::Base.configurations[:test] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'messages_test.db')
-
-}
 
 # Setup our logger
 ActiveRecord::Base.logger = logger

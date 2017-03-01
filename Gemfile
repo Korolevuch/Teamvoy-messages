@@ -20,7 +20,6 @@ gem 'rake'
 gem 'sass'
 gem 'slim'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
-gem 'sqlite3', '1.3.13'
 gem 'byebug'
 gem 'friendly_id'
 gem 'aescrypt'
@@ -29,6 +28,7 @@ gem 'padrino-sprockets', :require => ['padrino/sprockets'],
   :git => 'git://github.com/nightsailer/padrino-sprockets.git'
 gem 'uglifier', '2.1.1'
 gem 'yui-compressor', '0.9.6'
+gem 'pg'
 # Test requirements
 group :test do
   gem 'rspec'

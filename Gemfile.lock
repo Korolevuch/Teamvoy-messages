@@ -144,7 +144,7 @@ DEPENDENCIES
   rspec
   sass
   slim
-  sqlite3
+  sqlite3 (= 1.3.13)
   uglifier (= 2.1.1)
   whenever
   yui-compressor (= 0.9.6)

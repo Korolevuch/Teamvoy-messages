@@ -1,8 +1,12 @@
-h1 Message text
-= @message
-br
-input.copy-url-input
-button.btn.copy-to-clipboard
-  | Copy link
+div.container
+  div.col-md-12.row-centered
+    div.fr-view.col-centered
+      h1 Your message
+      p.bg-danger  = @message
+      br
+      input.copy-url-input
+      br
+      button.btn-success.btn.copy-to-clipboard
+        | Copy link
 
 

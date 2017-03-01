@@ -20,8 +20,7 @@ function copyText(text){
 }
 
 
-var txt = document.getElementById('txt');
-var btn = document.getElementById('btn');
-btn.addEventListener('click', function(){
-  copyText(txt.value);
-})
+//var btn = document.getElementById('btn');
+//btn.addEventListener('click', function(){
+  //copyText(txt.value);
+//})

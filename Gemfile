@@ -29,7 +29,6 @@ gem 'padrino-sprockets', :require => ['padrino/sprockets'],
   :git => 'git://github.com/nightsailer/padrino-sprockets.git'
 gem 'uglifier', '2.1.1'
 gem 'yui-compressor', '0.9.6'
-
 # Test requirements
 group :test do
   gem 'rspec'

@@ -3,3 +3,12 @@
   *= require bootstrap
   *= require bootstrap-theme
 */
+
+.row-centered {
+    text-align:center;
+}
+
+body {
+    background-image: url("Beautiful-flower.jpg");
+    background-color: #cccccc;
+}

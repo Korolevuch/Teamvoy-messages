@@ -15,7 +15,7 @@ source 'https://rubygems.org'
 
 # Project requirements
 gem 'rake'
-
+gem 'puma'
 # Component requirements
 gem 'sass'
 gem 'slim'

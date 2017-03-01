@@ -31,6 +31,15 @@ ActiveRecord::Base.configurations[:production] = {
   database: 'messages_development'
 }
 
+ActiveRecord::Base.configurations[:test] = {
+  adapter: 'postgresql',
+  host: 'localhost',
+  port: 5432,
+  username: 'bogdan',
+  password: '123456',
+  database: 'messages_development'
+}
+
 
 # Setup our logger
 ActiveRecord::Base.logger = logger

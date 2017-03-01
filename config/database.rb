@@ -23,12 +23,12 @@ ActiveRecord::Base.configurations[:development] = {
 }
 
 ActiveRecord::Base.configurations[:production] = {
-  adapter: 'postgresql',
-  host: 'still-anchorage-70952.herokuapp.com',
-  port: 5432,
-  username: 'bogdan',
-  password: '123456',
-  database: 'messages_development'
+  :adapter   => 'postgresql',
+  :database  => 'dvupkd3sv4ilb',
+  :username  => 'ennnixemolkeud',
+  :password  => 'e8096667eb1d49d4eb5f1e9b78843d3b5438e14214974ba82330dcbc22a40ca3',
+  :host      => 'ec2-54-243-253-17.compute-1.amazonaws.com',
+  :port      => 5432
 }
 
 ActiveRecord::Base.configurations[:test] = {

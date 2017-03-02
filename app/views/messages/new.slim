@@ -1,15 +1,14 @@
 div.container
   div.row.row-centered
-    div.col-md-12.col-centered
-      form
+    div.col-md-12.col-centered.div-color
+      form.div-color
       = form_for @message, '/create' do |f|
-          = f.label :message
+          = f.label :message , for: 'text'
           br
-          = f.text_area :description, class: 'form-control', rows: '5', id: 'textarea', placeholder: "Type your message here"
+          = f.text_area :description, class: 'form-control', rows: '5', id: 'text', placeholder: "Type your message here", required: ''
           br
-          h3.bg-success Delete message an one hour or first visit
+          h3 Choose when delete message (after one hour or first visit)
           = f.select  :exstraction, options: Message.exstractions.keys.map {|el| el },
             class: 'form-control'
           br
           = f.submit 'Create', class: "btn btn-success"
-

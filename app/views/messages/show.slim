@@ -1,12 +1,12 @@
-div.container
-  div.col-md-12.row-centered
-    div.fr-view.col-centered
-      h1 Your message
-      p.bg-danger  = @message
-      br
-      input.copy-url-input
+div.container-fluid
+  div.row
+    div.col-md-12.div-color
+      h1.text-center Your message
+      p.lead.text-center
+        = @message
+
+      input.copy-url-input.form-control
       br
       button.btn-success.btn.copy-to-clipboard
         | Copy link
-
 

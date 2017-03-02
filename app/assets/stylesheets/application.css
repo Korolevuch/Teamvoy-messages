@@ -4,11 +4,10 @@
   *= require bootstrap-theme
 */
 
-.row-centered {
-    text-align:center;
+.div-color {
+  background-color:  #DBDBC9;
+  border-radius: 20px;
 }
-
 body {
-    background-image: url("Beautiful-flower.jpg");
-    background-color: #cccccc;
+    background-image: url("maxresdefault.jpg");
 }

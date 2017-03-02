@@ -20,6 +20,6 @@ class DeleteMessage
   end
 
   def visit_count_more_than_two?
-    message_object.count_visit > 2
+    message_object.count_visit >= 2
   end
 end

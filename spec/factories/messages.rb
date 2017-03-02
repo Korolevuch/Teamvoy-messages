@@ -5,12 +5,12 @@ FactoryGirl.define do
     description { Faker::Lorem.characters(50) }
 
     trait :invalid do
-      count_visit 3
+      count_visit 2
       exstraction Message::VISIT
     end
 
     trait :valid do
-      count_visit 2
+      count_visit 1
       exstraction Message::VISIT
     end
 

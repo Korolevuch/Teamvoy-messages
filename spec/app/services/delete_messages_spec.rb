@@ -8,7 +8,7 @@ describe DeleteMessage do
          expect { service.destroy_message }.to change(Message, :count).by(0)
       end
     end
-    context 'when count visit <= 2 and type of deleting is visit' do
+    context 'when count visit >= 2 and type of deleting is visit' do
       let(:service) { DeleteMessage.new(message_object: create(:message, :valid)) }
       it "don't destroy mesage" do
         expect {service.destroy_message}.to change(Message, :count).by(1)
